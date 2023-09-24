@@ -9,7 +9,7 @@ def write_file(data, mode='a'):
             _file.write(Note.Note.to_string(notes) + '\n')
 
 
-def read_file():
+def read_file(file_name):
     data = []
     with (open(FILE_NAME, 'r', encoding="utf-8")) as _file:
         notes = _file.read().strip().split("\n")
